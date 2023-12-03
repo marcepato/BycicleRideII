@@ -1,0 +1,144 @@
+{
+    "resultados": [
+        {
+            "id": 1,
+            "descripcion": " BICICLETA  SHIFTER  ",
+            "rodado": "28",
+            "tipo": "Montain bike",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Delantera ",
+            "frenos": " a disco mecánico ",
+            "velocidades": " 21",
+            "foto": "./imagenes/todoterreno.jpg"
+        },
+        {
+            "id": 2,
+            "descripcion": " BICICLETA  SHIFTER  ",
+            "rodado": "29",
+            "tipo": "Montain bike",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Delantera ",
+            "frenos": " a disco mecánico ",
+            "velocidades": " 21",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_989526-MLA48109395058_112021-O.webp"
+        },
+        {
+            "id": 3,
+            "descripcion": " RALEIGH Mojave 2.0",
+            "rodado": "29",
+            "tipo": "Montain bike",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Delantera ",
+            "frenos": " Sin especificar ",
+            "velocidades": " 21",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_688046-MLA49730012781_042022-O.webpp"
+        },
+
+
+        {
+            "id": 4,
+            "descripcion": " BICICLETA  OLMO  ",
+            "rodado": "26",
+            "tipo": "Urbana",
+            "grupoEtario": "Adultos ",
+            "genero": "Mujer ",
+            "suspension": " Delantera ",
+            "frenos": " a disco mecánico ",
+            "velocidades": " 21",
+            "foto": "./imagenes/ciudad01.jpeg"
+        },
+        
+
+
+        {
+            "id": 5,
+            "descripcion": " VAIRO ISLANDER 21V ",
+            "rodado": "29",
+            "tipo": "Urbana",
+            "grupoEtario": "Adultos ",
+            "genero": "Hombre ",
+            "suspension": " Delantera ",
+            "frenos": " SHIMANO V BRAKE ",
+            "velocidades": " 21",
+            "foto": "https://borabikes.com.ar/64299-large_default/bicicleta-urbana-hombre-vairo-islander-21v-shimano-vbrake.jpg"
+        },
+        {
+            "id": 6,
+            "descripcion": " RALEIGH Classic lady",
+            "rodado": "28",
+            "tipo": "Urbana",
+            "grupoEtario": "Adultos ",
+            "genero": "Mujer ",
+            "suspension": " Delantera ",
+            "frenos": " Sin especificar ",
+            "velocidades": "Sin datos",
+            "foto": "https://http2.mlstatic.com/D_NQ_NP_972780-MLA46039046092_052021-O.webp" 
+        },
+        {
+            "id": 7,
+            "descripcion": " Olmo Wish 265",
+            "rodado": "26",
+            "tipo": "Urbana",
+            "grupoEtario": "Adultos ",
+            "genero": "Mujer ",
+            "suspension": " Delantera ",
+            "frenos": " V-Brake Plásticos ",
+            "velocidades": "7x3",
+            "foto": "https://d28hi93gr697ol.cloudfront.net/adf27d97-7952-60f9/img/Producto/362/befffcb241d53a67996f7a3f5eb78ac0-62968624c764d.jpg"
+        },
+        {
+            "id": 8,
+            "descripcion": " NINEBOT",
+            "rodado": " 8p",
+            "tipo": "Urbano",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Delantera ",
+            "frenos": " Sin especificar ",
+            "velocidades": " 30km",
+            "foto": "./imagenes/monopatin02.jpg"
+        },
+        {
+            "id": 9,
+            "descripcion": " MONOPATIN ELECTRICO  Max-You C1",
+            "rodado": "8 p",
+            "tipo": "Urbano",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Trasera ",
+            "frenos": " A disco delantero -ABS",
+            "velocidades": " 25 km",
+            "foto": "https://www.casadelaudio.com/Image/0/500_500-170-myo-001.jpg"
+        },
+        {
+            "id": 10,
+            "descripcion": " MONOPATIN ELECTRICO  REVEL-PRO M2",
+            "rodado": "20 p",
+            "tipo": "Todo tipo caminos",
+            "grupoEtario": "Adultos ",
+            "genero": "Unisex ",
+            "suspension": " Delantera ",
+            "frenos": "Disco Delantero/ Disco Trasero",
+            "velocidades": " 25 km",
+            "foto": " https://http2.mlstatic.com/D_NQ_NP_2X_751145-MLA54009359183_022023-F.webp"
+        }
+        ,
+        { "id": 11,
+        "descripcion": " MONOPATIN ELECTRICO  Scooter Aut30km",
+        "rodado": "20 p",
+        "tipo": "Todo tipo caminos",
+        "grupoEtario": "Adultos ",
+        "genero": "Unisex ",
+        "suspension": " Delantera ",
+        "frenos": "Electrónico",
+        "velocidades": " 25 km",
+        "foto": "https://images.fravega.com/f300/782193054aa44d6a69cb89d7f68430b6.jpg.webp"
+    }
+
+
+]
+}
+
