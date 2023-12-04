@@ -16,8 +16,8 @@ const { createApp } = Vue
         frenos:"",
         velocidad:"",
         foto:"",
-       // url:'http://marcerda.pythonanywhere.com/productos/'+id,
-        url: 'http://127.0.0.1:5000/bycicles/'+id,
+       // url:'ttps://marceh.pythonanywhere.com/bycicle'+id,
+        url: 'https://marceh.pythonanywhere.com/bycicle'+id,
        }  
     },
     methods: {
