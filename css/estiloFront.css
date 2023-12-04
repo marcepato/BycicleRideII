@@ -134,3 +134,63 @@ img .semueve {
         left: -600px;
     }
 }
+/* header*/
+.header {
+    background-color: rgb(89, 165, 44);
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    /*separa el logo y los link hacia los extremos horizontales*/
+    align-items: end;
+}
+
+#home {
+    /*logo izq superior*/
+    width: 150px;
+}
+
+#wht {
+    width: 3%;
+    position: fixed;
+    top: 6%;
+    right: 2%;
+}
+
+.navlink  {
+   
+    width: 600px;
+}
+
+.navlink > a  {
+   /* links de header*/
+   color: rgb(185, 223, 163);
+   text-decoration: none;
+   margin: 1%;
+   padding: 2%;
+   border: 2%;
+   font-size:large;
+   font-weight: bold;
+  }
+/* footer*/
+
+
+.footer {
+    background-color: #59A52C;
+    color: #b9dfa3;
+    display: flexbox;
+    width: 100%;
+    text-align: center;
+}
+
+.footer>p {
+    padding: 2%;
+    border: 1%;
+}
+
+.redes>img {
+    width: 2rem;
+
+}
+

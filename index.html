@@ -10,19 +10,29 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="./css/estiloFront.css">
+
+    <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
 
 </head>
 
 <body>
+
     <header>
-        <h2 class="parah2" >Transportes alternativos - Página del Administrador</h2>
-        <!-- place navbar here -->
+        <div class="header">
+            <div>
+                <img id=home src="./imagenes/logoSlogan.png" alt="logo">
+
+            </div>
+       
+        </div>
     </header>
+
     <main>
         <div class="container" id="app">
-            <h3 class=" parah2"> CRUD Transportes</h3>
+          
 
 
             <div if v-if="error">
@@ -33,7 +43,7 @@
                 <!--  spinner que gira here  ver falta algo de codigo -->
                 <div v-show="cargando" class="spinner-border" role="s"></div>
 
- 
+
                 <a class="btn btn-primary" href="TransporteNuevo.html">Nuevo</a>
 
 
@@ -52,11 +62,11 @@
                                 <th scope="col">Frenos</th>
                                 <th scope="col">Velocidad</th>
                                 <th scope="col">Foto</th>
-                                <th style="border: 2;"   >Accion </th>
+                                <th style="border: 2;">Accion </th>
                             </tr>
                         </thead>
                         <tbody>
-<br>
+                            <br>
 
 
                             <tr class="  table table-light " v-for="transporte in transportes">
@@ -76,9 +86,8 @@
                                 <td>
 
 
-                                     
-                                  <a class="btn btn-primary" 
-                                     
+
+                                    <a class="btn btn-primary"
                                         :href="'transporte_update.html?id='+ transporte.id">Editar</a>
                                     <button type="button" class="btn btn-danger"
                                         v-on:click="eliminar(transporte.id)">Eliminar</button>
@@ -96,7 +105,26 @@
     </main>
     <footer>
         <!-- place footer here -->
+
+        <div class="footer">
+
+            <p> Sitio desarollado en octubre 2023</p>
+    
+    
+            <a class="redes" href="https://www.facebook.com/" target="_blank">
+                <img src="./imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a class="redes" href="https://www.instagram.com/" target="_blank">
+                <img src="./imagenes/instagram.png" alt="instagram">
+            </a>
+    
+        </div>
     </footer>
+
+
+   
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
