@@ -3,8 +3,8 @@ createApp({
     data() {
         return {
             transportes: [],
-          //  url:    "https://marcerda.pythonanywhere.com/productos",  //
-           url: "http://127.0.0.1:5000/bycicles",
+          //  url:    "https://marceh.pythonanywhere.com/bycicle",  //
+           url: "https://marceh.pythonanywhere.com/bycicle",
       
             descripcion: " ",
             rodado: " ",
