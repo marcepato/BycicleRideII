@@ -16,8 +16,8 @@ const { createApp } = Vue
         frenos:"",
         velocidad:"",
         foto:"",
-       // url:'ttps://marceh.pythonanywhere.com/bycicle'+id,
-        url: 'https://marceh.pythonanywhere.com/bycicle'+id,
+       // url:'ttps://marceh.pythonanywhere.com/bycicle/'+id,
+        url: 'https://marceh.pythonanywhere.com/bycicle/'+id,
        }  
     },
     methods: {
@@ -63,7 +63,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro modificado")
-                    window.location.href = "./transporte.html"; // navega a productos.html          
+                    window.location.href = "./index.html"; // navega a productos.html          
                 })
                 .catch(err => {
                     console.error(err);

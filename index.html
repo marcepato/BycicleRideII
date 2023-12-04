@@ -1,12 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>hola</p>
+    <title>BycicleRide</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="./css/estiloFront.css">
+
+</head>
+
+<body>
+    <header>
+        <h2 class="parah2" >Transportes alternativos - Página del Administrador</h2>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container" id="app">
+            <h3 class=" parah2"> CRUD Transportes</h3>
+
+
+            <div if v-if="error">
+                <p>Se produjo un error - intente mas tarde"</p>
+
+            </div>
+            <div v-else>
+                <!--  spinner que gira here  ver falta algo de codigo -->
+                <div v-show="cargando" class="spinner-border" role="s"></div>
+
+ 
+                <a class="btn btn-primary" href="TransporteNuevo.html">Nuevo</a>
+
+
+                <div class="table-responsive">
+                    <table class="table table-dark ">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">Id</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Rodado</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">GrupoEtario</th>
+                                <th scope="col">Genero</th>
+                                <th scope="col">Suspension</th>
+                                <th scope="col">Frenos</th>
+                                <th scope="col">Velocidad</th>
+                                <th scope="col">Foto</th>
+                                <th style="border: 2;"   >Accion </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+<br>
+
+
+                            <tr class="  table table-light " v-for="transporte in transportes">
+                                <td scope="row">{{transporte.id}}</td>
+                                <td>{{transporte.descripcion}}</td>
+                                <td>{{transporte.rodado}}</td>
+                                <td>{{transporte.tipo}}</td>
+
+                                <td>{{transporte.grupoEtario}}</td>
+                                <td>{{transporte.genero}}</td>
+                                <td>{{transporte.suspension}}</td>
+                                <td>{{transporte.frenos}}</td>
+                                <td>{{transporte.velocidad}}</td>
+
+                                <td> <img width="60" :src="transporte.foto" :alt="transporte.descripcion"> </td>
+
+                                <td>
+
+
+                                     
+                                  <a class="btn btn-primary" 
+                                     
+                                        :href="'transporte_update.html?id='+ transporte.id">Editar</a>
+                                    <button type="button" class="btn btn-danger"
+                                        v-on:click="eliminar(transporte.id)">Eliminar</button>
+                                </td>
+                            </tr>
+                </div>
+                </tbody>
+
+
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/transportes.js"></script>
 </body>
+
 </html>
