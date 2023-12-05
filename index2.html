@@ -13,23 +13,27 @@
 
     <link rel="stylesheet" href="./css/estiloFront.css">
 
+    <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
+
 </head>
 
 <body>
+
     <header>
         <div class="header">
             <div>
                 <img id=home src="./imagenes/logoSlogan.png" alt="logo">
 
             </div>
-
+       
         </div>
-    
-        <!-- place navbar here -->
     </header>
+
     <main>
-        <br>
         <div class="container" id="app">
+          
+
 
             <div if v-if="error">
                 <p>Se produjo un error - intente mas tarde"</p>
@@ -38,13 +42,13 @@
             <div v-else>
                 <!--  spinner que gira here  ver falta algo de codigo -->
                 <div v-show="cargando" class="spinner-border" role="s"></div>
-               
+
 
                 <a class="btn btn-primary" href="TransporteNuevo.html">Nuevo</a>
 
 
-                <div class="table-responsive-xxl">
-                    <table class="table table-success">
+                <div class="table-responsive">
+                    <table class="table table-dark">
                         <thead>
                             <tr>
 
@@ -58,12 +62,7 @@
                                 <th scope="col">Frenos</th>
                                 <th scope="col">Velocidad</th>
                                 <th scope="col">Foto</th>
-                               
-                                
-
-                               <th style="border: 2;">Accion </th>
-                               
-                                
+                                <th style="border: 2;">Accion </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -82,18 +81,16 @@
                                 <td>{{transporte.frenos}}</td>
                                 <td>{{transporte.velocidad}}</td>
 
-                                <td> <img width="100" :src="transporte.foto" :alt="transporte.descripcion"> </td>
+                                <td> <img width="60" :src="transporte.foto" :alt="transporte.descripcion"> </td>
+
                                 <td>
 
-                                  
-                                        <a class="btn btn-primary btn-sm"
-                                        :href="'transporte_update.html?id='+ transporte.id">Editar</a>
 
-                                    
-                                        <button type="button" class="btn btn-danger btn-sm"
+
+                                    <a class="btn btn-primary"
+                                        :href="'transporte_update.html?id='+ transporte.id">Editar</a>
+                                    <button type="button" class="btn btn-danger"
                                         v-on:click="eliminar(transporte.id)">Eliminar</button>
- 
-                                    
                                 </td>
                             </tr>
                 </div>
@@ -112,17 +109,22 @@
         <div class="footer">
 
             <p> Sitio desarollado en octubre 2023</p>
-
-
+    
+    
             <a class="redes" href="https://www.facebook.com/" target="_blank">
                 <img src="./imagenes/facebook.png" alt="Facebook">
             </a>
             <a class="redes" href="https://www.instagram.com/" target="_blank">
                 <img src="./imagenes/instagram.png" alt="instagram">
             </a>
-
+    
         </div>
     </footer>
+
+
+   
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

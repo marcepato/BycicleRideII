@@ -1,140 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>BycicleRide</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/estiloFront.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo.png">
+    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
     <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
 
 </head>
 
 <body>
-
     <header>
         <div class="header">
             <div>
                 <img id=home src="./imagenes/logoSlogan.png" alt="logo">
 
             </div>
-       
+
+            <a href="https://api.whatsapp.com/send?phone=01141683861">
+                <img id="wht" src="./imagenes/whatsapp.png" alt="">
+            </a>
+            <div class="navlink">
+                <a href="login.html">Login</a>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="reserva.html">Reserva</a>
+                <a href="sucursales.html">Encuentro</a>
+                <a href="SitiosInteres.html">Sitios de Interes</a>
+
+            </div>
         </div>
     </header>
 
+
     <main>
-        <div class="container" id="app">
-          
-
-
-            <div if v-if="error">
-                <p>Se produjo un error - intente mas tarde"</p>
-
+        
+        
+            <div class="imagen">
+                <img src="./imagenes/saltaPaisaje01.jpeg" alt="SaltaCapital">
             </div>
-            <div v-else>
-                <!--  spinner que gira here  ver falta algo de codigo -->
-                <div v-show="cargando" class="spinner-border" role="s"></div>
-
-
-                <a class="btn btn-primary" href="TransporteNuevo.html">Nuevo</a>
-
-
-                <div class="table-responsive">
-                    <table class="table table-dark ">
-                        <thead>
-                            <tr>
-
-                                <th scope="col">Id</th>
-                                <th scope="col">Descripcion</th>
-                                <th scope="col">Rodado</th>
-                                <th scope="col">Tipo</th>
-                                <th scope="col">GrupoEtario</th>
-                                <th scope="col">Genero</th>
-                                <th scope="col">Suspension</th>
-                                <th scope="col">Frenos</th>
-                                <th scope="col">Velocidad</th>
-                                <th scope="col">Foto</th>
-                                <th style="border: 2;">Accion </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <br>
-
-
-                            <tr class="  table table-light " v-for="transporte in transportes">
-                                <td scope="row">{{transporte.id}}</td>
-                                <td>{{transporte.descripcion}}</td>
-                                <td>{{transporte.rodado}}</td>
-                                <td>{{transporte.tipo}}</td>
-
-                                <td>{{transporte.grupoEtario}}</td>
-                                <td>{{transporte.genero}}</td>
-                                <td>{{transporte.suspension}}</td>
-                                <td>{{transporte.frenos}}</td>
-                                <td>{{transporte.velocidad}}</td>
-
-                                <td> <img width="60" :src="transporte.foto" :alt="transporte.descripcion"> </td>
-
-                                <td>
-
-
-
-                                    <a class="btn btn-primary"
-                                        :href="'transporte_update.html?id='+ transporte.id">Editar</a>
-                                    <button type="button" class="btn btn-danger"
-                                        v-on:click="eliminar(transporte.id)">Eliminar</button>
-                                </td>
-                            </tr>
+        
+        <div class="flexContainer">
+            <div class="card">
+                <br>
+                <h2>Bicicleta Todoterreno</h2>
+                <br><br><br><br>
+                <img src="./imagenes/todoterreno.jpg" alt="Todoterreno">
+                <br><br><br><br>
+                <div class="detalle">
+                    <P>Apta para terrenos fuera de la ciudad</P>
+                    <p>dia $ 5000</gitp>
+                    <p>Medio dia $ 3000</p>
+                    <p>Hora $1500</p>
                 </div>
-                </tbody>
+                <br><br>
 
+                <a href="catalogo.html">
+                    <input  type="button" value="Rentar">
+                </a>
 
-                </table>
+                
             </div>
-
+            <div class="card">
+                <br>
+                <h2>Bicicleta Urbana</h2>
+                <br><br><br><br>
+                <img src="./imagenes/ciudad01.jpeg" alt="Ruta">
+                <br><br><br><br>
+                <div class="detalle">
+                    <P>Apta paseos en la ciudad</P>
+                    <p>dia $ 4500</p>
+                    <p>Medio dia $ 3000</p>
+                    <p>Hora $1200</p>
+                </div>
+                <br><br>
+                <a href="catalogo.html">
+                    <input  type="button" value="Rentar">
+                </a>
+            </div>
+            <div class="card">
+                <br>
+                <h2>Monopatin</h2>
+                <br><br><br>
+                <img src="./imagenes/monopatin02.jpg" alt=""> <br><br>
+                <div class="detalle">
+                    <P>Paseos por la ciudad sin esfuerzo fisico.</P>
+                    <p>dia $ 6000</p>
+                    <p>Medio dia $ 4000</p>
+                    <p>Hora $2000</p>
+                </div>
+                <br><br>
+                <a href="catalogo.html">
+                    <input type="submit" value="Rentar">
+                </a>
+            </div>
         </div>
-
+        </div>
+       
     </main>
     <footer>
-        <!-- place footer here -->
 
         <div class="footer">
 
             <p> Sitio desarollado en octubre 2023</p>
-    
-    
+
+
             <a class="redes" href="https://www.facebook.com/" target="_blank">
                 <img src="./imagenes/facebook.png" alt="Facebook">
             </a>
             <a class="redes" href="https://www.instagram.com/" target="_blank">
                 <img src="./imagenes/instagram.png" alt="instagram">
             </a>
-    
+
         </div>
     </footer>
-
-
-   
-
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./js/transportes.js"></script>
 </body>
 
 </html>

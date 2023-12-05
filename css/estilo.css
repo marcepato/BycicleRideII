@@ -1,0 +1,187 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .header {
+     background-color: rgb(89, 165, 44);
+     padding: 0.5%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: space-between;
+     /*separa el logo y los link hacia los extremos horizontales*/
+     align-items: end;
+ }
+
+ #home {
+     /*logo izq superior*/
+     width: 150px;
+ }
+
+ #wht {
+     width: 3%;
+     position: fixed;
+     top: 6%;
+     right: 2%;
+ }
+
+ .navlink  {
+    
+     width: 700px;
+ }
+
+ .navlink > a  {
+    /* links de header*/
+    color: rgb(185, 223, 163);
+    text-decoration: none;
+    margin: 1%;
+    padding: 2%;
+    border: 2%;
+    font-size:large;
+    font-weight: bold;
+   }
+
+   @media screen and (max-width: 600px) {
+    .navlink > a {
+
+        width: 100%;
+        display: block;
+        justify-content: center;
+
+    }
+}
+
+ .navlink > a:hover {
+     color: #222c1d;     
+ }
+
+ .imagen {
+     background-color: #b9dfa3;
+ }
+
+ .imagen>img {
+    width: 100%;
+}
+
+ .flexContainer {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     background-color: #b9dfa3;
+     justify-content: space-evenly;
+     padding: 0.5%;
+     border: 0.5%;
+ }
+
+ .card {
+     background-color: white;
+     margin: 0.5%;
+     padding: 0.5%;
+     text-align: center;
+     font-size: 80%;
+     border-radius: 5%;
+     width: 370px;
+    
+ }
+
+ 
+
+ .flexContainer h2 {
+     color: #59A52C;
+
+ }
+
+ .detalle {
+     text-align: left;
+     margin-left: 15%;
+ }
+
+ .detalle>p {
+     color: #59A52C;
+ }
+
+ .footer {
+     background-color: #59A52C;
+     color: #b9dfa3;
+     display: flexbox;
+     width: 100%;
+     text-align: center;
+ }
+
+ .footer>p {
+     padding: 2%;
+     border: 1%;
+ }
+
+ .redes>img {
+     width: 2rem;
+
+ }
+
+ /* Inicio estilos de reserva*/
+
+ 
+section {
+    background-color:#b9dfa3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(19, 129, 105, 0.2);
+    width: 80%;
+    
+}
+
+/* Estilos para formularios */
+form {
+    margin: 10px 0;
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para el botón de confirmación */
+button {
+    background-color: #48c066;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #48c004;
+}
+
+/* Estilos para el resumen de reserva */
+#resumen-nombre,
+#resumen-email,
+#resumen-telefono,
+#resumen-tipo,
+#resumen-fecha,
+#resumen-tiempo {
+    font-weight: bold;
+}
+
+/*fin estilos de reserva*/
+
+
+
