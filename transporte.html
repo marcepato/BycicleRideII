@@ -12,6 +12,10 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/estiloFront.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
+
 
 </head>
 
@@ -22,9 +26,14 @@
                 <img id=home src="./imagenes/logoSlogan.png" alt="logo">
 
             </div>
+            <div class="navlink2">
+
+                <a href="login.html">Admin</a>
+                <a href="index.html">Home</a>
+            </div>
 
         </div>
-    
+
         <!-- place navbar here -->
     </header>
     <main>
@@ -38,7 +47,7 @@
             <div v-else>
                 <!--  spinner que gira here  ver falta algo de codigo -->
                 <div v-show="cargando" class="spinner-border" role="s"></div>
-               
+
 
                 <a class="btn btn-primary" href="TransporteNuevo.html">Nuevo</a>
 
@@ -58,12 +67,12 @@
                                 <th scope="col">Frenos</th>
                                 <th scope="col">Velocidad</th>
                                 <th scope="col">Foto</th>
-                               
-                                
 
-                               <th style="border: 2;">Accion </th>
-                               
-                                
+
+
+                                <th style="border: 2;">Accion </th>
+
+
                             </tr>
                         </thead>
                         <tbody>
@@ -75,7 +84,6 @@
                                 <td>{{transporte.descripcion}}</td>
                                 <td>{{transporte.rodado}}</td>
                                 <td>{{transporte.tipo}}</td>
-
                                 <td>{{transporte.grupoEtario}}</td>
                                 <td>{{transporte.genero}}</td>
                                 <td>{{transporte.suspension}}</td>
@@ -85,15 +93,15 @@
                                 <td> <img width="100" :src="transporte.foto" :alt="transporte.descripcion"> </td>
                                 <td>
 
-                                  
-                                        <a class="btn btn-primary btn-sm"
+
+                                    <a class="btn btn-primary btn-sm"
                                         :href="'transporte_update.html?id='+ transporte.id">Editar</a>
 
-                                    
-                                        <button type="button" class="btn btn-danger btn-sm"
+
+                                    <button type="button" class="btn btn-danger btn-sm"
                                         v-on:click="eliminar(transporte.id)">Eliminar</button>
- 
-                                    
+
+
                                 </td>
                             </tr>
                 </div>

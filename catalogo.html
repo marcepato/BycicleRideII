@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo.png">
+    <link rel="stylesheet" href="./css/estiloCatalogo.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div>
+                <img id=home src="./imagenes/logoSlogan.png" alt="logo">
+
+            </div>
+
+
+            <a href="https://api.whatsapp.com/send?phone=01141683861">
+                <img id="wht" src="./imagenes/whatsapp.png" alt="">
+            </a>
+            <div class="navlink">
+                
+                <a href="catalogo.html">Catálogo</a>
+                <a href="reserva.html">Reserva</a>
+                <a href="sucursales.html">Encuentro</a>
+                <a href="SitiosInteres.html">Sitios de Interés</a>
+                <a href="login.html">Admin</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </header>
+    <br><br><br>
+    <main>
+     
+        <div id="app">
+
+            <div class="tarjeta" v-for="transporte in transportes">
+            
+                <img width="100" :src="transporte.foto" :alt="transporte.descripcion">
+
+              <!--  <p>ID:{{elemento.id}}</p>-->
+                <p>Nombre:{{transporte.descripcion}}</p>      
+                <p>Rodado:{{transporte.rodado}}</p>
+                <p>tipo:{{transporte.tipo}}</p>
+                <p>Grupo Etario:{{transporte.grupoEtario}}</p>
+                <p>Genero:{{transporte.genero}}</p>
+                <p>Suspension:{{transporte.suspension}}</p>
+                <p>frenos:{{transporte.frenos}}</p>
+                <p>velocidad:{{transporte.velocidad}}</p>
+                    
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/transportes.js"></script>
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+
+            <p> Sitio desarollado en octubre 2023</p>
+
+
+            <a class="redes" href="https://www.facebook.com/" target="_blank">
+                <img src="./imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a class="redes" href="https://www.instagram.com/" target="_blank">
+                <img src="./imagenes/instagram.png" alt="instagram">
+            </a>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

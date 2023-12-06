@@ -1,0 +1,28 @@
+        
+            * {
+                box-sizing: border-box;
+            }
+
+            .tarjeta {
+
+               /* marcela*/
+                margin: 0.5%;
+                padding: 0.5%;
+                text-align: center;
+                font-size: 80%;
+                border-radius: 5%;
+                width: 370px;
+
+            }
+
+            .tarjeta>img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            #app {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }

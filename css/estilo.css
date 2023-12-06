@@ -31,17 +31,33 @@
      width: 700px;
  }
 
+ .navlink2{
+
+    width: 200px;
+ }
+
  .navlink > a  {
     /* links de header*/
     color: rgb(185, 223, 163);
     text-decoration: none;
     margin: 1%;
-    padding: 2%;
-    border: 2%;
+    padding: 1%;
+    border: 1%;
     font-size:large;
     font-weight: bold;
    }
 
+
+   .navlink2 > a  {
+    /* links de header*/
+    color: rgb(185, 223, 163);
+    text-decoration: none;
+    margin: 1%;
+    padding: 1%;
+    border: 1%;
+    font-size:large;
+    font-weight: bold;
+   }
    @media screen and (max-width: 600px) {
     .navlink > a {
 

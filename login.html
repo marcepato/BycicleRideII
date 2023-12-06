@@ -10,6 +10,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/estiloFront.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./fonts/JosefinSans-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/JosefinSans-VariableFont_wght.ttf">
+
 
 </head>
 
@@ -20,6 +24,11 @@
         <img id=home src="./imagenes/logoSlogan.png" alt="logo">
 
       </div>
+      <div class="navlink2">
+                   
+        <a href="login.html">Admin</a>
+        <a href="index.html">Home</a> 
+    </div>
 
     </div>
   </header>
@@ -35,12 +44,12 @@
 
         <div class="mb-3">
           <label for="usuario">Usuario</label> <br>
-          <input type="text" name="Usuario" id="Usuario" v-model="Usuario">
+          <input type="text" name="Usuario" id="Usuario" v-model="Usuario" required>
         </div>
 
         <div class="mb-3">
           <label for="tipo">Contraseña</label> <br>
-          <input type="password" name="contraseña" id="contraseña" v-model="tipo">
+          <input type="password" name="contraseña" id="contraseña" v-model="tipo" required>
         </div>
    
 

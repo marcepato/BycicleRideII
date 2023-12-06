@@ -1,0 +1,121 @@
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.suc1:hover {
+    background-color: #b9dfa3;
+}
+
+.suc1 {
+
+    padding: 5px;
+    text-align: center;
+    border: solid rgb(89, 165, 44) 4px;
+    border-radius: 25px;
+    background-color: rgba(158, 225, 152, 0.34);
+    transition: width 2s;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: rgb(89, 165, 44);
+    width: 90%;
+}
+
+#cards1 {
+    border: solid b9dfa3 2px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+
+    width: 80%;
+
+}
+
+#cards2 {
+    border: solid rgba(185, 223, 163) 4px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#cards3 {
+    border: solid rgba(41, 203, 63, 0.5) 1px;
+
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#cards1>p {
+    color: #59A52C;
+}
+
+.imag1 {
+    position: relative;
+    width: 100%;
+}
+
+.imag2 {
+    position: absolute;
+}
+
+.imag3 {
+    position: relative;
+    text-align: center;
+}
+
+
+.centrado {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgba(45, 237, 64, 0.971);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.sombra {
+    border: solid rgb(89, 165, 44) 4px;
+    border-radius: 5%;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*para imagen en movimiento
+    */
+img .semueve {
+    object-fit: cover;
+}
+
+.semuevetexto {
+    font-size: 24px;
+    color: rgba(17, 107, 26, 0.971);
+    margin-left: 20px;
+    
+}
+
+.Mov {
+    background-color: rgba(127, 255, 212, 0.1);
+    background-image: linear-gradient(to right, rgba(127, 255, 212, 0.2), white);
+    position: relative;
+    border-radius: 40%;
+    animation: mymove 20s infinite;
+    animation-delay: -2s;
+}
+
+@keyframes mymove {
+    from {
+        left: 800px;
+    }
+
+    to {
+        left: -600px;
+    }
+}
